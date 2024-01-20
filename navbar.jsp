@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top">
   <div class="container-fluid">
   
   <a class="navbar-brand" href="#">
