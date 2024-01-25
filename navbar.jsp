@@ -6,21 +6,22 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
+.navbar{
+background: rgba(0,0,0,0.2);
+}
 .navbar-nav a{
 font-size: 15px;
 font-weight: 500;
 }
 .navbar-light .navbar-brand{
 font-size: 25px;
-font-weight: 700;
+font-weight: 900;
 letter-spacing: 2px;
 }
-.navbar-light .navbar-brand:focus,
-.navbar-light .navbar-brand:hover{
-color: #ffc107;
-}
-.navbar-light .navbar-nav .nav-link{
-color: #ffc107;
+.navbar-nav a:hover,
+.navbar-nav a:focus
+{
+background-color: #f9e076;
 }
 .w-100{
 height: 100vh;
@@ -33,7 +34,7 @@ height: 100vh;
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand text-white" href="#" ><span class="text-warning">Uni</span>Stay</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +43,7 @@ height: 100vh;
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+          <a class="nav-link active text-white"  aria-current="page" href="#home">Home</a>
         </li>
        <li class="nav-item">
           <a class="nav-link text-white" aria-current="page" href="#about">About</a>

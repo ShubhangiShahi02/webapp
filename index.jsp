@@ -42,7 +42,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.6);
   z-index: 1;
   }
   .w-100{
@@ -73,6 +73,30 @@ width: 100%;
  font-size: 12px;
  }
 }
+ section .button {
+     margin: 16px 0;
+ }
+ 
+ section .button {
+     margin: 16px 0;
+ }
+ 
+ section .button button {
+     outline: none;
+     padding: 8px 16px;
+     border-radius: 4px;
+     font-size: 25px;
+     font-weight: 400;
+     border: 2px solid transparent;
+     cursor: pointer;
+     transition: all 0.4s ease;
+ }
+ 
+ section .button button:hover {
+     border-color: #ffc107;
+     background-color: #fff;
+ }
+ 
 </style>
 
 <link rel="stylesheet"  href="style.css" >
@@ -89,27 +113,27 @@ width: 100%;
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://i.pinimg.com/originals/f6/c9/a3/f6c9a3cbb33bc8bbed47844c4b7852ae.jpg" class="d-block w-100" alt="...">
+      <img src="image/first.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption">
         <h5>Perfect home guarantee</h5>
         <p>Some representative placeholder content for the first slide.</p>
-          <button type="button" class="btn btn-warning">Warning</button> 
+          <button type="button" class="btn btn-warning">Learn More</button> 
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://th.bing.com/th/id/R.503417d4c0c2e9bf2e014751c5fd9361?rik=6YfA5aTGwaQzEg&riu=http%3a%2f%2fu.hwstatic.com%2fpropertyimages%2f3%2f36649%2f1.jpg&ehk=6mKfhE54xMIWmuAcz8hbpcEo3w9N%2b8F%2fNumH%2b1sAJ14%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="...">
+      <img src="image/second.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption">
         <h5>Price Match Promise</h5>
         <p>Some representative placeholder content for the second slide.</p>
-         <button type="button" class="btn btn-warning">Warning</button> 
+          <button type="button" class="btn btn-warning">Learn More</button> 
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://uinnberlinhostel.com/wp-content/themes/uinnberlinhostel/images/Hostel_Map/S3/uinnberlinhostel_single_room1.jpg" class="d-block w-100" alt="...">
+      <img src="image/third.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption">
         <h5>24-Hours service for Expert Booking</h5>
         <p>Some representative placeholder content for the third slide.</p>
-         <button type="button" class="btn btn-warning">Warning</button> 
+         <button type="button" class="btn btn-warning">Learn More</button> 
       </div>
     </div>
   </div>
@@ -125,7 +149,55 @@ width: 100%;
 
 <!-- about section -->
 
-<section id="about" ></section>
+<section id="about" class="about-section-padding">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-12 col-12">
+<div class="about-img">
+<img src="image/unistay-high-resolution-logo-transparent.png" alt="" class="img-fluid">
+</div>
+</div>
+<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+<div class="about-text">
+<h2>We Provide Best Quality <br>Services Ever</h2>
+<p class="text-justify">
+Our application,UniStay, proudly boasts a commitment to delivering unparalleled quality services. 
+With a relentless pursuit of excellence, we have crafted a platform that stands out for its 
+user-friendly interface, innovative features, and unwavering dedication to customer satisfaction.
+From seamless user experiences to cutting-edge solutions, UniStay exemplifies our organization's
+dedication to providing the very best in the industry. As a testament to our commitment,
+we continuously strive to exceed expectations and set new benchmarks for quality and service excellence.
+</p>
+ <button type="button" class="btn btn-warning">Learn More</button> 
+</div>
+</div>
+</div>
+</div>
+</section>
+   
+  <!-- Services Section -->
+<section id="services" class="services section-padding">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="section-header text-center pb-5">
+<h2>Our Services</h2>
+<p>UniStay is a platform that simplifies<br> the search for student accommodations.
+</p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12 col-md-12 col-lg-4">
+<div class="card text-white text-center bg-dark pb-2">
+<div class="card-body"></div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
    
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
