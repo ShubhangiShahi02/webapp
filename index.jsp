@@ -97,8 +97,13 @@ width: 100%;
      background-color: #fff;
  }
  
+ .services .card-body i{
+ font-size: 50px;
+ }
+ 
 </style>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet"  href="style.css" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -192,14 +197,59 @@ we continuously strive to exceed expectations and set new benchmarks for quality
 <div class="row">
 <div class="col-12 col-md-12 col-lg-4">
 <div class="card text-white text-center bg-dark pb-2">
-<div class="card-body"></div>
+<div class="card-body">
+<i class="bi bi-subtract"></i>
+<h3 class="card-title">Best Quality</h3>
+<p class="lead">Lorem ipsum egestas gravida id fringilla diam volutpat,
+ tincidunt euismod himenaeos potenti dictum sollicitudin commodo, egestas sodales per
+  iaculis cubilia hac.</p>
+ <button class="btn btn-warning text-dark">Read More</button>
 </div>
 </div>
 </div>
 
+<div class="col-12 col-md-12 col-lg-4">
+<div class="card text-white text-center bg-dark pb-2">
+<div class="card-body">
+<i class="bi bi-slack"></i>
+<h3 class="card-title">Sustainability</h3>
+<p class="lead">Lorem ipsum egestas gravida id fringilla diam volutpat,
+ tincidunt euismod himenaeos potenti dictum sollicitudin commodo, egestas sodales per
+  iaculis cubilia hac.</p>
+ <button class="btn btn-warning text-dark">Read More</button>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-12 col-lg-4">
+<div class="card text-white text-center bg-dark pb-2">
+<div class="card-body">
+<i class="bi bi-playstation"></i>
+<h3 class="card-title">Integrity</h3>
+<p class="lead">Lorem ipsum egestas gravida id fringilla diam volutpat,
+ tincidunt euismod himenaeos potenti dictum sollicitudin commodo, egestas sodales per
+  iaculis cubilia hac.</p>
+ <button class="btn btn-warning text-dark">Read More</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section-padding">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="section-header text-center pb-5">
+<h2>Our </h2>
+</div>
+</div>
+</div>
 </div>
 </section>
    
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
