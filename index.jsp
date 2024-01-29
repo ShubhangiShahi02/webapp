@@ -243,7 +243,18 @@ we continuously strive to exceed expectations and set new benchmarks for quality
 <div class="row">
 <div class="col-md-12">
 <div class="section-header text-center pb-5">
-<h2>Our </h2>
+<h2>Our Portfolio</h2>
+<p>UniStay <br> Where Every Stay is a Home.</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-12 col-md-12 col-lg-4">
+<div class="card text-center bg-white pb-2">
+<div class="card-body text-dark">
+<img src="image/port1.jpg" alt="" class="img-fluid">
+
+</div>
 </div>
 </div>
 </div>
