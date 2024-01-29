@@ -101,6 +101,9 @@ width: 100%;
  font-size: 50px;
  }
  
+ .portfolio .card{
+ box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+ }
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -252,15 +255,99 @@ we continuously strive to exceed expectations and set new benchmarks for quality
 <div class="col-12 col-md-12 col-lg-4">
 <div class="card text-center bg-white pb-2">
 <div class="card-body text-dark">
+<div class="img-area mb-4">
 <img src="image/port1.jpg" alt="" class="img-fluid">
+</div>
+<h3 class="card-title">Secure and Efficient Booking System</h3>
+<p class="lead">UniStay offers a secure and user-friendly booking system 
+for students, ensuring a streamlined and trustworthy process for reserving accommodations.</p>
+<button class="btn btn-warning text-dark">Learn More</button>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-12 col-lg-4">
+<div class="card text-center bg-white pb-2">
+<div class="card-body text-dark">
+<div class="img-area mb-4">
+<img src="image/port2.jpg" alt="" class="img-fluid">
+</div>
+<h3 class="card-title">Real-Time Availability Updates</h3>
+<p class="lead">Keep pace with the dynamic nature of student accommodations through UniStay's real-time availability updates,
+ ensuring students access the latest and most accurate information about the availability of rooms and spaces.</p>
+<button class="btn btn-warning text-dark">Learn More</button>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-12 col-lg-4">
+<div class="card text-center bg-white pb-2">
+<div class="card-body text-dark">
+<div class="img-area mb-4">
+<img src="image/port3.jpg" alt="" class="img-fluid">
+</div>
+<h3 class="card-title">Comprehensive Accommodation Listings</h3>
+<p class="lead">Comprehensive database for student accommodations, offering detailed info on rent, 
+amenities, and location for informed decision-making.</p>
+<button class="btn btn-warning text-dark">Learn More</button>
+</div>
+</div>
+</div>
 
 </div>
 </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact section-padding">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="section-header text-center pb-5">
+<h2>Contact Us</h2>
+<p>An Easy <br> Accommodation Finder For Students </p>
+</div>
+</div>
+</div>
+
+<div class="row m-0">
+<div class="col-md-12 p-0 pt-4 pb-4">
+<form action="#" class="bg-light p-4.m-auto"><div class="row">
+<div class="col-md-12">
+<div class="mb-3">
+<input type="text" class="form-control" required placeholder="Your Full Name">
+</div>
+</div>
+<div class="col-md-12">
+<div class="mb-3">
+<input type="email" class="form-control" required placeholder="Your Email Here">
+</div>
+</div>
+<div class="col-md-12">
+<div class="mb-3">
+<textarea row="3" required class="form-control" placeholder="Your Query Here"></textarea>
+</div>
+</div>
+<button class="btn btn-warning btn-lg btn-block mt-3 text-dark">Send Now</button>
+</div>
+</form>
 </div>
 </div>
 </div>
 </section>
    
+
+<!-- footer -->
+<footer class="bg-dark p-2 text-center">
+<div class="container">
+<p class="text-white">
+ Copyright: &copy; All rights reserved by:
+ <a href="#" style="text-decoration: none">
+ <strong class="text-warning">Shubhangi Shahi & Aditya Tiwari</strong>
+  </a>
+ </p>
+</div>
+</footer> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -36,7 +36,7 @@ height: 100vh;
 <body>
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand text-white" href="#" ><span class="text-warning">Uni</span>Stay</a>
+    <a class="navbar-brand text-white" href="index.jsp" ><span class="text-warning">Uni</span>Stay</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -55,15 +55,14 @@ height: 100vh;
           <a class="nav-link text-white" aria-current="page" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" aria-current="page" href="#team">Team</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link text-white" aria-current="page" href="#contact">Contact</a>
         </li>
+       <button type="button" class="btn btn-dark"><a href="Login.jsp" class="text-white">Login</a></button>
       </ul>
      
     </div>
   </div>
 </nav>
+
 </body>
 </html>
