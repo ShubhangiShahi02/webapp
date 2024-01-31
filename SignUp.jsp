@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Page</title>
+    <title>Sign-up Page</title>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400&display=swap');
 .container{
@@ -65,12 +65,30 @@ height: 100vh;
 </nav>
 </div>
 
- <!-- Login -->
-
-   <div class="container">
+<!-- Sign up Page -->
+<div class="container ">
 <div class="mx-auto" style="width: 500px">
-<form action="LoginAction.jsp" method="post" class="shadow-lg mx-2 p-2 mb-2 bg-white text-black rounded">
-<h2 class="text-center"> Log-in</h2>
+<form action="SignUpAction.jsp" method="post" class="shadow-lg my-3 mx-2 p-2 mb-2 bg-white text-black rounded">
+<h1 class="text-center">Sign-up</h1>
+<div class="form-row">
+    <div class="col-lg-14">
+      <label for="validationDefault01">First name</label>
+      <input type="text" name="firstname" class="form-control" id="validationDefault01" placeholder="First name"  required>
+    </div>
+    <div class="col-lg-14">
+      <label for="validationDefault02">Last name</label>
+      <input type="text" name="lastname" class="form-control" id="validationDefault02" placeholder="Last name"  required>
+    </div>
+    <div class="col-lg-14">
+      <label for="validationDefaultUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text " id="inputGroupPrepend2">@</span>
+        </div>
+        <input type="text" name="username" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+  </div>
 
   <div class="form-row">
     <div class="col-lg-14">
@@ -80,18 +98,37 @@ height: 100vh;
     
     <div class="col-lg-14">
       <label for="inputPassword4">Password</label>
-      <input type="password" name="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+      <input type="password" name="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+    
+    <div class="col-lg-14">
+      <label for="inputPassword4">Confirm-Password</label>
+      <input type="password" name="password" class="form-control" id="inputPassword4" placeholder="Confirm-Password">
     </div>
   </div>
+
   
   
- <a href="ForgotPassword.jsp" class="text-black" >Forgot Password ?</a>
- <p>Don't have an account? <a href="SignUp.jsp" class="text-black">Sign-up</a></p>
-  <button type="submit" class="btn btn-primary bg-dark text-white" style="width: 470px">Log-in</button>
+  
+  
+  <div class="form-row">
+  
+  </div>
+  
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+ <p>Already have an account? <a href="Login.jsp" class="text-black">Log-in</a></p>
+  <button type="submit" class="btn btn-primary bg-dark text-white" style="width: 470px">Sign in</button>
   </form>
   </div>
+  
 </div>
- 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>

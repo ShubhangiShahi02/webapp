@@ -5,8 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Page</title>
-    <style>
+    <title>Forgot</title>
+    
+      <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400&display=swap');
 .container{
 	position: absolute;
@@ -50,10 +51,11 @@ height: 100vh;
  }
 </style>
 <link rel="stylesheet"  href="style.css" >
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
-   <div class="bg-image">
+    <div class="bg-image">
     <!-- Navbar/Banner -->
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
   <div class="container-fluid">
@@ -70,7 +72,7 @@ height: 100vh;
    <div class="container">
 <div class="mx-auto" style="width: 500px">
 <form action="LoginAction.jsp" method="post" class="shadow-lg mx-2 p-2 mb-2 bg-white text-black rounded">
-<h2 class="text-center"> Log-in</h2>
+<h2 class="text-center">Forgot-Password</h2>
 
   <div class="form-row">
     <div class="col-lg-14">
@@ -79,20 +81,22 @@ height: 100vh;
     </div>
     
     <div class="col-lg-14">
-      <label for="inputPassword4">Password</label>
-      <input type="password" name="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+      <label for="inputPassword4">New-Password</label>
+      <input type="password" name="password" class="form-control" id="inputPassword4" placeholder="New-Password" required>
+    </div>
+    
+    <div class="col-lg-14">
+      <label for="inputPassword4">Confirm-Password</label>
+      <input type="password" name="password" class="form-control" id="inputPassword4" placeholder="Confirm-Password" required>
     </div>
   </div>
   
-  
- <a href="ForgotPassword.jsp" class="text-black" >Forgot Password ?</a>
  <p>Don't have an account? <a href="SignUp.jsp" class="text-black">Sign-up</a></p>
   <button type="submit" class="btn btn-primary bg-dark text-white" style="width: 470px">Log-in</button>
   </form>
   </div>
 </div>
  
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
