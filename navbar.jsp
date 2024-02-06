@@ -63,7 +63,7 @@ height: 100vh;
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="Login.jsp">Login</a></li>
-            <li><a class="dropdown-item" href="#">Owner Login</a></li>
+            <li><a class="dropdown-item" href="#">My Profile</a></li>
           </ul>
         </li>
 

@@ -52,6 +52,7 @@
         outline: none;
         position: relative;
         color: #fff;
+        font-size: 14px;
     }
 
     #btn{
@@ -156,7 +157,7 @@ align-items: center;
 padding: 20px;
 padding-left: 30px;
 padding-right: 30px;
-padding-top: 30px;
+padding-top: 10px;
 color:  #ffd300;
 text-decoration: none;
 font-size: 25px;
@@ -206,8 +207,6 @@ font-size: 25px;
                 <button type="button" class="submit-btn">Signup</button>
             </form>
         </div>
-        
-       
     </div>
   
     <script>
@@ -228,6 +227,7 @@ font-size: 25px;
             btn.style.left = "0px";
         }
     </script>
+
 
   </body>
 </html>

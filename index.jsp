@@ -343,7 +343,7 @@ amenities, and location for informed decision-making.</p>
 <p class="text-white">
  Copyright: &copy; All rights reserved by:
  <a href="#" style="text-decoration: none">
- <strong class="text-warning">Shubhangi Shahi & Aditya Tiwari</strong>
+ <strong class="text-warning">UniStay</strong>
   </a>
  </p>
 </div>

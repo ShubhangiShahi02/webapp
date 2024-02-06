@@ -138,7 +138,7 @@ align-items: center;
 padding: 20px;
 padding-left: 30px;
 padding-right: 30px;
-padding-top: 30px;
+padding-top: 10px;
 color:  #ffd300;
 text-decoration: none;
 font-size: 25px;
@@ -177,8 +177,7 @@ font-size: 25px;
                 <a href="Login.jsp" class="text">Register</a>
             </form>
         </div>
-        
-       
+     
     </div>
   
 </body>
