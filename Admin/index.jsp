@@ -20,7 +20,7 @@
   </head>
   <body>
   <!-- Navbar/Banner test -->
-
+<div class="hero">
 <div class="container">
     	<div class="row">
 			<div class="col-md-6 col-md-offset-3">
@@ -95,7 +95,7 @@
 			</div>
 		</div>
 	</div>
- 
+ </div>
 <script  src="loginScript.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
    
 	

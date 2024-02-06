@@ -5,94 +5,200 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Page</title>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400&display=swap');
-.container{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.bg-image{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-position: realtive;
-width: 100%;
-height: 100vh;
-background-image: url(image/second.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
-}
-.bg-image::after{
-content:'';
-position: absolute;
-width: 100%;
-height: 100%;
-top: 0;
-left: 0;
-background-color: rgba(0,0,0,0.7);
-}
-.navbar-nav a{
-font-size: 15px;
-font-weight: 500;
-}
-.w-100{
-height: 100vh;
-}
- @media only screen and (max-width: 767px){
- .navbar-nav{
- text-align: center;
- }
- }
-</style>
-<link rel="stylesheet"  href="style.css" >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
-   <div class="bg-image">
-    <!-- Navbar/Banner -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-  <div class="container-fluid">
-     <a class="navbar-brand text-white" href="index.jsp" ><span class="text-warning">Uni</span>Stay</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-</nav>
-</div>
+    <title>UniStay | login & Registration</title>
+    <link rel="stylesheet"  href="style.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
- <!-- Login -->
+    .hero{
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(image/second.jpg);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+       
+    }
 
-   <div class="container">
-<div class="mx-auto" style="width: 500px">
-<form action="LoginAction.jsp" method="post" class="shadow-lg mx-2 p-2 mb-2 bg-white text-black rounded">
-<h2 class="text-center"> Log-in</h2>
+    .form-box{
+        width: 380px;
+        height: 510px;
+        position: relative;
+        margin: 6% auto;
+        background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), transparent;
+        padding: 5px;
+        overflow: hidden;
+    }
 
-  <div class="form-row">
-    <div class="col-lg-14">
-      <label for="inputEmail4">Email</label>
-     <input type="Email" name="email" placeholder="Email-Address" class="form-control">
-    </div>
+    .button-box{
+        width: 220px;
+        margin: 35px auto;
+        position: relative;
+        box-shadow: 0 0 20px 9px #ffd3001f;
+        border-radius: 30px;
+    }
+
+    .toggle-btn{
+        padding: 10px 30px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+        color: #fff;
+    }
+
+    #btn{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 110px;
+        height: 100%;
+        background: linear-gradient(to right, #5d4f08, #ffd300);
+        border-radius: 30px;
+        transition: .5s;
+    }
+
+    .social-icons{
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .social-icons .bi{
+    width: 50px;
+    box-shadow: 0 0 20px 0 #ffd3001f;
+    margin: 0 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    color:#ffd300;
+    font-size: 25px;
+    transition: all 0.4s ease;
+    }
+
+    .social-icons .bi:hover{
+    background: transparent;
+     color: #fff;
+    }
+
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #eee7e7;
+    outline: none;
+    background: transparent;
+}
+
+.input-field::placeholder{
+    color: #eee7e7;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #5d4f08, #ffd300);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+   margin: 30px 10px 30px 0;
+}
+
+span{
+    margin: 30px 10px 30px 0;
+    color: #f6ecec;
+    font-size: 12px;
+    position: absolute;
+}
     
-    <div class="col-lg-14">
-      <label for="inputPassword4">Password</label>
-      <input type="password" name="password" class="form-control" id="inputPassword4" placeholder="Password" required>
-    </div>
-  </div>
-  
-  
- <a href="ForgotPassword.jsp" class="text-black" >Forgot Password ?</a>
- <p>Don't have an account? <a href="SignUp.jsp" class="text-black">Sign-up</a></p>
-  <button type="submit" class="btn btn-primary bg-dark text-white" style="width: 470px">Log-in</button>
-  </form>
-  </div>
-</div>
- 
+#login{
+    left: 50px;
+}
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+#register{
+    left: 450px;
+}
+
+.text{
+color: #fff;
+margin-left: 80px;
+}
+</style>
+
+</head>
+  <body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button  type="button" class="toggle-btn" id="login-form-link" onclick="login()">Login</button>
+                <button  type="button" class="toggle-btn" id="register-form-link" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-google"></i>
+            </div> 
+
+            <form action="" id="login" class="input-group">
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="button" class="submit-btn">Login</button>
+                <a href="forgot.jsp" class="text">Forgot Password</a>
+            </form>
+
+            <form action="" id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="First Name" required>
+                <input type="text" class="input-field" placeholder="Last Name" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions.</span>
+                <button type="button" class="submit-btn">Signup</button>
+            </form>
+        </div>
+        
+       
+    </div>
+  
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var btn = document.getElementById("btn");
+    
+        function register(){
+            x.style.left = "-400px";
+            y.style.display = "block";
+            y.style.left = "50px";
+            btn.style.left = "110px";
+        }
+    
+        function login(){
+            x.style.left = "50px";
+            y.style.display = "none";
+            btn.style.left = "0px";
+        }
+    </script>
+
   </body>
 </html>
