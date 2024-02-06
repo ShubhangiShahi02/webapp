@@ -21,7 +21,7 @@ letter-spacing: 2px;
 .navbar-nav a:hover,
 .navbar-nav a:focus
 {
-background-color: #f9e076;
+text-decoration: underline;
 }
 .w-100{
 height: 100vh;

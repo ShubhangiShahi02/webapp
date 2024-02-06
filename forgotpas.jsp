@@ -1,14 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UniStay | login & Registration</title>
-    <link rel="stylesheet"  href="style.css" >
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forgot Password</title>
+<link rel="stylesheet"  href="style.css" >
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400&display=swap');
     *{
@@ -44,27 +42,11 @@
         border-radius: 30px;
     }
 
-    .toggle-btn{
-        padding: 10px 30px;
-        cursor: pointer;
-        background: transparent;
-        border: 0;
-        outline: none;
-        position: relative;
-        color: #fff;
+    h3{
+    color: #ffd300;
+    text-align: center;
     }
-
-    #btn{
-        top: 0;
-        left: 0;
-        position: absolute;
-        width: 110px;
-        height: 100%;
-        background: linear-gradient(to right, #5d4f08, #ffd300);
-        border-radius: 30px;
-        transition: .5s;
-    }
-
+   
     .social-icons{
         margin: 10px auto;
         text-align: center;
@@ -142,7 +124,7 @@ span{
 
 .text{
 color: #fff;
-margin-left: 80px;
+margin-left: 110px;
 text-decoration: none;
 }
 
@@ -168,10 +150,9 @@ text-decoration: none;
 font-size: 25px;
 }
 </style>
-
 </head>
-  <body>
-    <div class="hero">
+<body>
+<div class="hero">
     <div class="navbar">
     <div>
      <a href="index.jsp">Uni<span>Stay</span></a>
@@ -180,8 +161,7 @@ font-size: 25px;
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
-                <button  type="button" class="toggle-btn" id="login-form-link" onclick="login()">Login</button>
-                <button  type="button" class="toggle-btn" id="register-form-link" onclick="register()">Register</button>
+                <h3>Forgot-Password</h3>
             </div>
             <div class="social-icons">
                 <i class="bi bi-facebook"></i>
@@ -194,40 +174,12 @@ font-size: 25px;
                 <input type="password" class="input-field" placeholder="Password" required>
                 <input type="checkbox" class="check-box"><span>Remember Password</span>
                 <button type="button" class="submit-btn">Login</button>
-                <a href="forgotpas.jsp" class="text">Forgot Password</a>
-            </form>
-
-            <form action="" id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="First Name" required>
-                <input type="text" class="input-field" placeholder="Last Name" required>
-                <input type="email" class="input-field" placeholder="Email" required>
-                <input type="password" class="input-field" placeholder="Password" required>
-                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions.</span>
-                <button type="button" class="submit-btn">Signup</button>
+                <a href="Login.jsp" class="text">Register</a>
             </form>
         </div>
         
        
     </div>
   
-    <script>
-        var x = document.getElementById("login");
-        var y = document.getElementById("register");
-        var btn = document.getElementById("btn");
-    
-        function register(){
-            x.style.left = "-400px";
-            y.style.display = "block";
-            y.style.left = "50px";
-            btn.style.left = "110px";
-        }
-    
-        function login(){
-            x.style.left = "50px";
-            y.style.display = "none";
-            btn.style.left = "0px";
-        }
-    </script>
-
-  </body>
+</body>
 </html>
